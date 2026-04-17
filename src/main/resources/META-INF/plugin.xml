@@ -60,5 +60,11 @@
                        path="/themes/kanagawa_dragon.theme.json"/>
         <themeProvider id="com.github.followlemmi.kanagawa.lotus"
                        path="/themes/kanagawa_lotus.theme.json"/>
+        <themeProvider id="com.github.followlemmi.kanagawa.wave.classic"
+                       path="/themes/kanagawa_wave_classic.theme.json"/>
+        <themeProvider id="com.github.followlemmi.kanagawa.dragon.classic"
+                       path="/themes/kanagawa_dragon_classic.theme.json"/>
+        <themeProvider id="com.github.followlemmi.kanagawa.lotus.classic"
+                       path="/themes/kanagawa_lotus_classic.theme.json"/>
     </extensions>
 </idea-plugin>

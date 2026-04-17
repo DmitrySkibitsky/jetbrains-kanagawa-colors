@@ -59,9 +59,18 @@ Warm parchment backgrounds with rich, saturated syntax colors.
 ### Activate
 
 **Settings** > **Appearance & Behavior** > **Appearance** > **Theme** and choose:
-- **Kanagawa Wave**
-- **Kanagawa Dragon**
-- **Kanagawa Lotus**
+
+| Theme                         | UI                   |
+|-------------------------------|----------------------|
+| **Kanagawa Wave**             | Islands UI (2024.2+) |
+| **Kanagawa Dragon**           | Islands UI (2024.2+) |
+| **Kanagawa Lotus**            | Islands UI (2024.2+) |
+| **Kanagawa Wave (Classic)**   | Classic UI           |
+| **Kanagawa Dragon (Classic)** | Classic UI           |
+| **Kanagawa Lotus (Classic)**  | Classic UI           |
+
+The **Islands UI** variants are designed for the modern JetBrains UI introduced in 2024.2.
+The **Classic** variants target the legacy UI and do not inherit from Islands.
 
 ## Compatibility
 
@@ -75,6 +84,14 @@ Warm parchment backgrounds with rich, saturated syntax colors.
 ```
 
 The plugin `.zip` will be in `build/distributions/`.
+
+The Classic theme variants (`*_classic.theme.json`) are generated automatically during the build from their Islands counterparts via `generate_classic_themes.py`. Do not edit them by hand — edit the source themes instead.
+
+To regenerate Classic themes manually:
+
+```bash
+python3 generate_classic_themes.py
+```
 
 To launch a sandboxed IDE for testing:
 
